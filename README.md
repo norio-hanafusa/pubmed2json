@@ -1,6 +1,6 @@
 # PubMed CSV / TXT → JSON Converter
 
-PubMed からエクスポートした **CSV** または **TXT (MEDLINE format)** ファイルを、構造化された **JSON** に変換するブラウザベースのツールです。
+A browser-based tool that converts **CSV** or **TXT (MEDLINE format)** files exported from PubMed into structured **JSON**.
 
 ## Demo
 
@@ -8,18 +8,18 @@ PubMed からエクスポートした **CSV** または **TXT (MEDLINE format)**
 
 ## Features
 
-- CSV (PubMed search results export) の変換
-- TXT / MEDLINE 形式の変換（著者・所属・ORCID の構造化を含む）
-- ファイルのドラッグ＆ドロップに対応
-- すべての処理はブラウザ内で完結（サーバーへのアップロードなし）
-- 変換結果の JSON ダウンロード
+- Converts CSV (PubMed search results export)
+- Converts TXT / MEDLINE format (including structured author, affiliation, and ORCID data)
+- Drag & drop file input
+- Runs entirely in the browser — no server upload required
+- Download converted JSON
 
 ## Usage
 
-1. [Demo](https://norio-hanafusa.github.io/pubmed2json/pubmed_csv_to_json.html) を開く
-2. PubMed からエクスポートした CSV または TXT ファイルをドラッグ＆ドロップ（またはファイル選択）
-3. 「Convert → JSON」ボタンをクリック
-4. 変換されたJSONファイルをダウンロード
+1. Open the [Demo](https://norio-hanafusa.github.io/pubmed2json/pubmed_csv_to_json.html)
+2. Drag & drop (or browse) a CSV or TXT file exported from PubMed
+3. Click the "Convert → JSON" button
+4. Download the converted JSON file
 
 ## Supported Fields
 
@@ -41,15 +41,15 @@ PubMed からエクスポートした **CSV** または **TXT (MEDLINE format)**
 
 ### TXT (MEDLINE) mode
 
-120以上のタグに対応しています。主要なタグ:
+Supports 120+ tags. Key tags include:
 
-- **識別子**: PMID, PMC, DOI, AID, LID
-- **書誌情報**: TI, AB, JT, TA, DP, VI, IP, PG
-- **著者**: FAU, AU, AD, AUID（構造化された著者オブジェクトとして出力）
-- **分類**: PT, MH, OT, GR
-- **日付**: DEP, EDAT, CRDT, PHST
+- **Identifiers**: PMID, PMC, DOI, AID, LID
+- **Bibliographic**: TI, AB, JT, TA, DP, VI, IP, PG
+- **Authors**: FAU, AU, AD, AUID (output as structured author objects)
+- **Classification**: PT, MH, OT, GR
+- **Dates**: DEP, EDAT, CRDT, PHST
 
-詳細はアプリ内のカラムマッピング表をご確認ください。
+See the column mapping table in the app for full details.
 
 ## License
 
